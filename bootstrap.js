@@ -1,6 +1,6 @@
 /* ========================================================================
- * Bootstrap: Bootstrap.js v1
- * http://twbs.github.com/bootstrap/javascript.html#bootstrap
+ * Bootstrap: Bootstrap.js v0.1
+ * Just a template for Bootstrap your Javascript Plugin
  * ========================================================================
  * This is just a template of comment about a javascript plugin.
  * The same patten in Bootstraps Plugins
@@ -9,7 +9,7 @@
 
 +function ($) { "use strict";
 
-  // BUTTON PUBLIC CLASS DEFINITION
+  // PLUGIN NAME PUBLIC CLASS DEFINITION
   // ==============================
 
   var PluginName = function (element, options) {
@@ -26,12 +26,12 @@
     // method do
   }
 
-  Button.prototype.otherMethod = function () {
+  PluginName.prototype.otherMethod = function () {
     // method do other thing 
   }
 
 
-  // BUTTON PLUGIN DEFINITION
+  // PLUGIN DEFINITION
   // ========================
 
   var old = $.fn.pluginName
@@ -49,19 +49,19 @@
     })
   }
 
-  $.fn.button.Constructor = Button
+  $.fn.pluginName.Constructor = PluginName
 
 
-  // BUTTON NO CONFLICT
+  // PLUGIN NO CONFLICT
   // ==================
 
-  $.fn.button.noConflict = function () {
-    $.fn.button = old
+  $.fn.pluginName.noConflict = function () {
+    $.fn.pluginName = old
     return this
   }
 
 
-  // BUTTON DATA-API
+  // PLUGIN DATA-API
   // ===============
 
   $(document).on('click.bs.PluginName.data-api', '[data-toggle^=pluginName]', function (e) {
